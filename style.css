@@ -25,6 +25,8 @@
 
 body {
     margin: 0;
+    width: 100%;
+    overflow: hidden;
     font-family: var(--body-font);
     background: var(--body-color);
     color: var(--text-color);
@@ -33,14 +35,10 @@ body {
     align-items: center;
 }
 
-.container {
-    max-width: 968px;
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
-}
 
 .clock-container {
     height: 100dvh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +46,7 @@ body {
 
 .clock-circle {
     position: relative;
+    overflow: hidden;
     width: 400px;
     height: 400px;
     box-shadow: -6px -6px 16px var(--white-color),
